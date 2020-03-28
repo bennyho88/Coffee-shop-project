@@ -207,7 +207,7 @@ body {
     }
 
     .video__switch-btn {
-        position: absolute;
+        position: absolute; 
         top: 0;
         left: 0;
         background: var(--brown);
