@@ -114,7 +114,6 @@ body {
 
 /* nav Btn */
 
-
 .navBtn {
     position: fixed;
     top: 5%;
@@ -142,6 +141,7 @@ body {
         transform: scale(1);
     }
 }
+
 /* nav */
 
 .nav {
@@ -153,6 +153,7 @@ body {
     background: rgba(242, 180, 80, 0.9);
     z-index: 3;
 }
+
 
 .nav__links {
     list-style-type: none;
