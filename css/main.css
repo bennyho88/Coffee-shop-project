@@ -245,7 +245,7 @@ body {
         transition: all 0.5s ease-out;
     }
 
-    .btnSlide {
-        left: 50%;
-    }
+   .btnSlide {
+       left: 50%;
+   }
 }

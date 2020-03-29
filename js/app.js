@@ -47,7 +47,9 @@ UI.prototype.showNav = function() {
     document.querySelector('.nav').classList.toggle('nav--show');
 }
 
+
 // play/pause the video
+
 UI.prototype.videoControls = function() {
 
     let btn = document.querySelector('.video__switch-btn');
@@ -61,6 +63,13 @@ UI.prototype.videoControls = function() {
     }
    
 }
+
+
+
+
+
+
+
 
 
 
