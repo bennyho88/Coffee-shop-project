@@ -85,6 +85,10 @@ body {
      color: var(--grey);
  }
 
+ .section-title__left {
+     margin-left: 10rem;
+ }
+
 /* end of global */
 
 /* preloader */
