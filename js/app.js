@@ -52,6 +52,17 @@ function eventListeners() {
             ui.showFeedback('some form values empty', 'error');
         }
     })
+
+    // display modal
+
+    const links = document.querySelectorAll('.work-item__icon');
+    
+    links.forEach( function(item) {
+
+        item.addEventListener('click', function(event) {
+            ui.showModal(event);
+        })
+    })
 }
 
 // constructor function
@@ -152,7 +163,12 @@ UI.prototype.clearFields = function () {
     document.querySelector('.input-lastname').value = '';
     document.querySelector('.input-email').value = '';
 }
-//
+// show modal
+
+UI.prototype.showModal = function(event) {
+
+    console.log(event.target.parentElement);
+}
 
 function Customer(name, lastname, email) {
 
@@ -162,31 +178,4 @@ function Customer(name, lastname, email) {
 }
 
 
-
-
-
-
-
-
-/*
-document.addEventListener('DOMContentLoaded', function() {
-
-
-
-    setTimeout(function() {
-        document.querySelector('.preloader').style.display = 'none';
-
-    }, 2000)
-
-
-    document.querySelector('.navBtn').addEventListener('click', function() {
-
-
-        document.querySelector('.nav').classList.toggle('nav__btn');
-        console.log('it works')
-
-})
-
-})
-*/
 
