@@ -411,7 +411,7 @@ body {
 .drink-card__list {
     display: grid;
     grid-template-columns: 100%;
-    grid-row-gap: 
+    grid-row-gap: 2rem;
 }
 
 .person {

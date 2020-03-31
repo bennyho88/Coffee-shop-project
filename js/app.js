@@ -63,6 +63,12 @@ function eventListeners() {
             ui.showModal(event);
         })
     })
+    // hide modal
+
+    document.querySelector('.work-modal__close').addEventListener('click', function() {
+
+        ui.closeModal();
+    })
 }
 
 // constructor function
@@ -167,8 +173,30 @@ UI.prototype.clearFields = function () {
 
 UI.prototype.showModal = function(event) {
 
-    console.log(event.target.parentElement);
+    event.preventDefault();
+
+    if(event.target.parentElement.classList.contains('work-item__icon')) {
+
+        let id = event.target.parentElement.dataset.id;
+        
+        const modal = document.querySelector('.work-modal');
+        const modalItem = document.querySelector('.work-modal__item');
+
+        modal.classList.add('work-modal--show');
+        
+       modalItem.style.backgroundImage = `url(img/work-${id}.jpeg)`
+
+
+    }
 }
+
+// hide modal
+
+UI.prototype.closeModal = function() {
+
+    document.querySelector('.work-modal').classList.remove('work-modal--show');
+}
+// customer
 
 function Customer(name, lastname, email) {
 
